@@ -1,0 +1,83 @@
+swarl:lab George$ ls
+PM_P1.pdf	PM_s01.pdf
+swarl:lab George$ mkdir lab1
+swarl:lab George$ ls
+PM_P1.pdf	PM_s01.pdf	lab1
+swarl:lab George$ cd lab1
+swarl:lab1 George$ mkdir PM_01
+swarl:lab1 George$ cd PM_01/
+swarl:PM_01 George$ ls
+swarl:PM_01 George$ dir
+-bash: dir: command not found
+swarl:PM_01 George$ ls
+swarl:PM_01 George$ mkdir Practica1
+swarl:PM_01 George$ mkdir Practica2
+swarl:PM_01 George$ mkdir Practica3
+swarl:PM_01 George$ ls
+Practica1	Practica2	Practica3
+swarl:PM_01 George$ mv Practica3 Practica5
+swarl:PM_01 George$ ls
+Practica1	Practica2	Practica5
+swarl:PM_01 George$ cd Practica1
+swarl:Practica1 George$ ls
+swarl:Practica1 George$ mkdir Arduino
+swarl:Practica1 George$ mkdir DIR_1A
+swarl:Practica1 George$ touch ArcP1
+swarl:Practica1 George$ ls
+ArcP1	Arduino	DIR_1A
+swarl:Practica1 George$ cd DIR_1A/
+swarl:DIR_1A George$ ls
+swarl:DIR_1A George$ touch Arc1A
+swarl:DIR_1A George$ ls
+Arc1A
+swarl:DIR_1A George$ cd ..
+swarl:Practica1 George$ cd ..
+swarl:PM_01 George$ ls
+Practica1	Practica2	Practica5
+swarl:PM_01 George$ cd Practica2
+swarl:Practica2 George$ ls
+swarl:Practica2 George$ mkdir DIR_2A
+swarl:Practica2 George$ cd DIR_2A/
+swarl:DIR_2A George$ touch Arc2A
+swarl:DIR_2A George$ mkdir DIR_2AA
+swarl:DIR_2A George$ mkdir DIR_2AB
+swarl:DIR_2A George$ cd ...
+-bash: cd: ...: No such file or directory
+swarl:DIR_2A George$ cd ..
+swarl:Practica2 George$ s
+-bash: s: command not found
+swarl:Practica2 George$ cd ..
+swarl:PM_01 George$ ls
+Practica1	Practica2	Practica5
+swarl:PM_01 George$ cd Practica5
+swarl:Practica5 George$ mkdir DIR_5A
+swarl:Practica5 George$ cd DIR_5A/
+swarl:DIR_5A George$ touch Arc5A
+swarl:DIR_5A George$ mkdir DIR_2AA
+swarl:DIR_5A George$ 
+-------------------------------
+swarl:DIR_2A George$ rm Arc2A 
+swarl:DIR_2A George$ ls
+DIR_2AA	DIR_2AB
+swarl:DIR_2A George$ rm -fa DIR_2AB
+rm: illegal option -- a
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+swarl:DIR_2A George$ rm -f DIR_2AB
+rm: DIR_2AB: is a directory
+swarl:DIR_2A George$ rm -I DIR_2AB
+rm: illegal option -- I
+usage: rm [-f | -i] [-dPRrvW] file ...
+       unlink file
+swarl:DIR_2A George$ rm -i DIR_2AB
+rm: DIR_2AB: is a directory
+swarl:DIR_2A George$ 
+swarl:DIR_2A George$ rm -r DIR_2AB
+swarl:DIR_2A George$ ls
+DIR_2AA
+swarl:DIR_2A George$ cp -R DIR_2AA DIR_X
+swarl:DIR_2A George$ LS
+DIR_2AA	DIR_X
+swarl:DIR_2A George$ ls
+DIR_2AA	DIR_X
+----------------------------------
